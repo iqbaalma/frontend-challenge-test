@@ -1,10 +1,13 @@
+/* button styles */
 .button-fill {
     padding: 10px 20px;
     border: 3px solid #1a73e8;
     background-color: #1a73e8;
     color: white;
     border-radius: 5px;
-    transition: 0.2s ease-in-out
+    transition: 0.2s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button-stroke {
@@ -13,7 +16,9 @@
     background-color: transparent;
     color: #1a73e8;
     border-radius: 5px;
-    transition: 0.2s ease-in-out
+    transition: 0.2s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button-fill:hover {
@@ -26,7 +31,35 @@
     cursor: pointer;
 }
 
+/* sidebar styles */
 .sidebar {
     position: fixed;
     top: 5rem;
+}
+
+/* codehighlighter styles */
+.copy-trigger {
+    position: relative;
+    top: 3rem;
+    right: 3px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: small;
+    max-width: 100px;
+    text-align: center;
+}
+
+.trigger-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#code-language {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
 }

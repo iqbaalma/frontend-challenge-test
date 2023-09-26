@@ -2,6 +2,7 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
 import '../App.css'
+import { Link } from 'react-router-dom';
 
 const { Sider } = Layout;
 
@@ -25,7 +26,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeKey, setActiveKey }) => {
         >
           <Menu.ItemGroup title="Get Started" key="title1">
             <Menu.Item key="option1">
-            Searching for news articles
+             Searching for news articles
             </Menu.Item>
             <Menu.Item key="option2">
             Get curated breaking news headlines

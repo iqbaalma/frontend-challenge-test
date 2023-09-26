@@ -1,0 +1,21 @@
+.container-contents {
+    display: flex;
+    min-height: auto;
+    margin: auto 1.5rem auto 220px;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.artikel-contents {
+    margin-top: 10rem;
+    max-width: 37rem;
+
+}
+
+.code-contents {
+    margin-top: 3rem;
+    max-width: 37rem;
+    max-height: 100vh;
+    overflow-y: auto;
+    overflow-x: auto visible;
+}
