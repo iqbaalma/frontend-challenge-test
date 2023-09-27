@@ -18,7 +18,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeKey, setActiveKey }) => {
 
   return (
     <Sider className='sidebar' width={200} theme="light">
-      <div style={{ height: '85vh', overflowY: 'auto' }}>
+      <div style={{ height: '88vh', overflowY: 'auto' }}>
         <Menu
           mode="vertical"
           selectedKeys={[activeKey]}

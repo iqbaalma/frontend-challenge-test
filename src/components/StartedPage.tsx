@@ -4,6 +4,7 @@ import Prism from 'prismjs';
 import CodeHighlighter from '../reusable/CodeHighlerter';
 import '../styles/started.css'
 import { ReusableButtonFill } from '../reusable/Button';
+import { AiFillFileText, AiOutlineKey } from "react-icons/ai";
 
 export default function StartedPage(): JSX.Element {
   const linkStyle = {
@@ -1196,6 +1197,23 @@ export default function StartedPage(): JSX.Element {
           <p>You should know how to make web requests in your chosen programming language. We have included some crude ways to do this in our examples below if you need a place to start. Alternatively you can use one of our <a href='#' style={linkStyle}>client libraries.</a></p>
           <br/>
           <p>Now let's consider two of the most popular use cases for News API and walk through each one:</p>
+          <br/>
+          <div className='container-card-ariticles'>
+            <div className='card'>
+              <AiOutlineKey size="80px" color="#1a73e8" />
+              <br/>
+              <p>Search for articles on the web that mention a keyword or phrase</p>
+            </div>
+            <div className='card'>
+              <AiFillFileText size="80px" color="#1a73e8" />
+              <br/>
+              <p>Get the current top headlines for a country, category, or publisher</p>
+            </div>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <h2 style={{ marginTop: 50 }}>Search for news articles that mention a specific topic or keyword</h2>
           <p>The main use of News API is to search through every article published by over 80,000 news sources and blogs in the last 5 years. Think of us as Google News that you can interact with programmatically!
             <br/>
@@ -1206,13 +1224,39 @@ export default function StartedPage(): JSX.Element {
             <br/>
 
           For more information about the <code style={{ color: 'red', backgroundColor: '#f7f7f9' }}>/everything</code> endpoint, including valid parameters for narrowing your search, see the <a href='#' style={linkStyle}>Everything endpoint reference.</a></p>
-          
+          <br/>
+            <br/>
+
+          <h2>Get the current top headlines for a country or category</h2>
+          <br/>
+          <p>News API is great as a data source for news tickers and other applications where you want to show your users live headlines. We track headlines in 7 categories across over 50 countries, and at over a hundred top publications and blogs, in near real time.
+            <br/>
+            <br/>
+
+          Let's make a request to get live top headlines in the US right now. We'll use the <code style={{ color: 'red', backgroundColor: '#f7f7f9' }}>/top-headlines</code> endpoint for this.
+          <br/>
+          <br/>
+
+          This returns a JSON object with the results in an array we can iterate over.
+          <br/>
+          <br/>
+          For more information about the <code style={{ color: 'red', backgroundColor: '#f7f7f9' }}>/top-headlines</code> endpoint, including valid parameters for focusing on specific countries and categories, see the <a href='#' style={linkStyle}>Top Headlines endpoint reference.</a></p>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <p>If you want headlines just from a specific source, for example BBC News, we can do that too.
+          <br/>
+          <br/>
+          The identifier for BBC News is bbc-news, which we can get by querying the sources endpoint.</p>
+          <br/>
+          <p>For more details about the endpoints and modifiers you can lookup articles with, including possible responses, check <a href='#' style={linkStyle}>the full documentation.</a></p>
         </div>
     {/* window articles end */}
 
     {/* window code */}
         <div className='code-contents'>
-          <CodeHighlighter code={javascript} language="javascript" />
+          <CodeHighlighter code={javascript} language="json" />
         </div>
     {/* window code end */}
       </div>
