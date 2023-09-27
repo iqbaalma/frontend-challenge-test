@@ -10,7 +10,7 @@ export default function Navbar(): JSX.Element {
 
     return (
       <>
-      <Layout className="container-nav">
+      <Layout data-testid="navbar-1" className="container-nav">
 
         <div className="logo-nav">
             <Content>
