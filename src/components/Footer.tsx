@@ -17,7 +17,7 @@ export default function Footer(): JSX.Element {
                     <a>Privacy Policy</a>
                     <a>Terms of Service</a>
                 </div>
-                <div className="list-menu-footer">
+                <div className="list-menu-footer-dif">
                     <h2 style={{ cursor: 'default', color: 'white' }}>Support</h2>
                     <a>Contact</a>
                     <a>Twitter</a>

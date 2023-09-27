@@ -19,3 +19,11 @@
     gap: 15px;
     cursor: pointer;
 }
+
+.list-menu-footer-dif {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    align-items: flex-end;
+}
