@@ -13,8 +13,10 @@ export default function Navbar(): JSX.Element {
       <Layout data-testid="navbar-1" className="container-nav">
 
         <div className="logo-nav">
-            <Content>
+            <Content className="logo-fill">
                 <span className="">News</span>
+            </Content>
+            <Content className="logo-stroke">
                 <span className="">API</span>
             </Content>
         </div>

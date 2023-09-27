@@ -13,6 +13,29 @@
     z-index: 100;
 }
 
+.logo-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.logo-fill {
+    background-color: #1a73e8;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.logo-stroke {
+    background-color: transparent;
+    border: #1a73e8 solid 3px;
+    font-size: 30px;
+    padding: 2px 5px;
+    color: #1a73e8;
+}
+
 .link-directions-nav {
     display: flex;
     flex-direction: row;
